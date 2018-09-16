@@ -7,6 +7,15 @@ class ProviderAdmin::DashboardController < ProviderAdminController
       "Actualiza tu catálogo",
       "Genera reportes"
     ]
+
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "#{@provider.name}-reporte-#{Time.now.to_datetime}",
+               layout: 'application',
+               disposition: 'attachment'
+      end
+    end
   end
 
   private

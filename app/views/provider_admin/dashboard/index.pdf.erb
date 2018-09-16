@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <h1>Reporte para el proveedor <%= @provider.name %></h1>
+    <!-- Icon Cards-->
+  <div class="row">
+    <div class="card-body">
+      <div class="label label-default"><%= @provider.redeemables.count %> productos</div>
+      <div class="label label-default"><%= @provider.redemptions.count %> órdenes</div>
+    </div>
+  </div>
+
+  <!-- DataTables Example -->
+  <div class="card mb-3">
+    <div class="card-header">
+      <i class="fas fa-table"></i>
+      Ordenes</div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Producto/Servicio</th>
+              <th>Puntos</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Cliente</th>
+              <th>Producto/Servicio</th>
+              <th>Puntos</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <% @provider.redemptions.each do |redemption| %>
+              <tr>
+                <td><%= redemption.customer.name %></td>
+                <td><%= redemption.redeemable.name %></td>
+                <td><%= redemption.points %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+  </div>
+
+  <div class="container-fluid">
+
+    <!-- DataTables Example -->
+    <div class="card mb-3">
+      <div class="card-header">
+        <i class="fas fa-table"></i>
+        Productos/Servicios</div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Descripción</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <% @provider.redeemables.each do |redeemable| %>
+                <tr>
+                  <td><%= redeemable.name %></td>
+                  <td><%= redeemable.description %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+    </div>
+
+  </div>
+</div>

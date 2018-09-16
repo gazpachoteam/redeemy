@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   namespace :provider_admin do
     resources :providers do
       resources :redemptions, only: [:index]
+      resources :redeemables, only: [:index]
     end
   end
 end

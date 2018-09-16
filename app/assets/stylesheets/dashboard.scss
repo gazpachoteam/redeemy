@@ -444,6 +444,7 @@ p { margin: 0; }
 	right: 24px;
 	position: fixed;
 	width: 400px;
+  z-index: 1000;
 }
 
 #live-chat header {

@@ -20,6 +20,18 @@ class Api::V1::AnswersController < ApplicationController
 
     answer = response["output"]["text"][0]
 
+    if response["intents"].map {|i| i["intent"]}.include? "ventas_puntos"
+      provider_points = @user.redemptions.map(&:points).inject(:+)
+      answer = "Usted a acumulado #{provider_points} puntos en ventas"
+      context = {}
+    end
+
+    if response["intents"].map {|i| i["intent"]}.include? "ventas_producto"
+      provider_sells = @user.redemptions.count
+      answer = "Usted a ha vendido #{provider_sells} productos"
+      context = {}
+    end
+
     if context.key? "Cliente"
       provider_redeemables_ids = @user.redeemables.map(&:id)
 

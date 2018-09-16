@@ -5,8 +5,6 @@ ruby '2.4.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -43,6 +41,8 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 
 group :development, :test do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -71,3 +71,10 @@ gem 'devise'
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.3.1'
+gem "wicked_pdf"
+gem "wkhtmltopdf-heroku"
+gem "wkhtmltopdf-binary-edge"
+
+group :production do
+  gem 'pg'
+end

@@ -11,3 +11,11 @@ provider_one:
 provider_two:
   id: 2
   name: 'Spa Maria Luisa'
+
+provider_three:
+  id: 3
+  name: 'Allianz'
+
+provider_four:
+  id: 4
+  name: 'Bogota Dev'
