@@ -1,24 +1,35 @@
-# README
+# Redeemy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use your points to finance any social project.
 
-Things you may want to cover:
+## Contributing Requirements
 
-* Ruby version
+**Create a branch**
 
-* System dependencies
+```
+$ git checkout master
+$ git pull
+$ git checkout -b xx-short-description
+```
 
-* Configuration
+The name of the branch should start with the number of the issue, followed by max three keywords that describe the issue (e.g. `23-fix-homepage`, `56-change-font`, etc.).
 
-* Database creation
+### Writing good commit messages
 
-* Database initialization
+A commit message has a first line, a blank line and an optional body. For example (taken from the Rails repository):
 
-* How to run the test suite
+```
+Make flash messages cookie compatible with Rails 4
 
-* Services (job queues, cache servers, search engines, etc.)
+In #xxx we removed the discard key from the session hash used to flash
+messages and that broke compatibility with Rails 4 applications because they
+try to map in the discarded flash messages and it returns nil.
 
-* Deployment instructions
+Fixes #xxx.
+```
 
-* ...
+Notice that the first line and the body are capitalized. The first line should be 50 characters or less and should start with a verb (e.g. make, fix, create, implement, add, etc.).
+
+The body should be wrapper to 72 characters and you can reference any issue and [use keywords to close them](https://help.github.com/articles/closing-issues-via-commit-messages/).
+
+**Tip:** Think about sending an e-mail to a colleague where the first line is the subject of the email, and the body is the body of the e-mail.
