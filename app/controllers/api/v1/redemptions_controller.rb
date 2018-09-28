@@ -1,8 +1,8 @@
 class Api::V1::RedemptionsController < ApplicationController
+  before_action :set_provider
 
   def index
-    @redemptions = Redemption.all
-    render json: @redemptions
+    @redemptions = @provider.redemptions
   end
 
   def show
@@ -35,6 +35,12 @@ class Api::V1::RedemptionsController < ApplicationController
     else
       render json: { errors: @redemption.errors.full_messages}, status: 400
     end
+  end
+
+  private
+
+  def set_provider
+    @provider = Provider.find(params[:provider_id])
   end
 
   def redemption_params
