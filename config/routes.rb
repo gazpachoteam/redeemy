@@ -9,11 +9,11 @@ Rails.application.routes.draw do
       post "/request_token" => "tokens#request_token"
       post "/authenticate_token" => "tokens#authenticate_token"
 
-      resources :providers do
+      resources :providers, module: "providers" do
         resources :redemptions
         resources :projects
       end
-
+      resources :projects, only: %i[index show]
       resources :point_types, only: %i[index]
       resources :customers, only: %i[index show]
 
