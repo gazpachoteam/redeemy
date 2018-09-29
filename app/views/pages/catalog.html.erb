@@ -9,18 +9,18 @@
   <div class="container">
 
     <div class="row">
-      <% @redeemables.each do |redeemable|%>
+      <% @projects.each do |project|%>
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
           <%= image_tag('market.jpg', class: 'card-img-top')%>
           <div class="card-body">
-            <p class="card-text"><%=redeemable.name%></p>
-            <p class="card-text"><%=redeemable.description%></p>
+            <p class="card-text"><%=project.name%></p>
+            <p class="card-text"><%=project.description%></p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
               </div>
-              <small class="text-muted">Disponible hasta: <%= redeemable.expiration%></small>
+              <small class="text-muted">Disponible hasta: <%= project.expiration%></small>
             </div>
           </div>
         </div>

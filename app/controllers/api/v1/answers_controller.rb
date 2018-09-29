@@ -33,13 +33,13 @@ class Api::V1::AnswersController < ApplicationController
     end
 
     if context.key? "Cliente"
-      provider_redeemables_ids = @user.redeemables.map(&:id)
+      provider_projects_ids = @user.projects.map(&:id)
 
       client_detail = CustomerDetail.where(name: params[:text]).first
       customer = client_detail.customer
-      orders = Redemption.where(redeemable_id: provider_redeemables_ids, customer_id: customer.id)
+      orders = Redemption.where(project_id: provider_projects_ids, customer_id: customer.id)
 
-      orders_text = orders.map {|o| "id:#{o.id}: #{o.points} puntos redimidos por #{o.redeemable.name}"}.join("<br>")
+      orders_text = orders.map {|o| "id:#{o.id}: #{o.points} puntos redimidos por #{o.project.name}"}.join("<br>")
 
       answer = "Los últimos pedidos de #{customer.name} son:<br> #{orders_text}"
 

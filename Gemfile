@@ -39,6 +39,7 @@ gem 'ibm_watson', '~> 0.6.1'
 
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
+gem 'cancancan', '~> 2.3'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

@@ -1,8 +1,8 @@
-class Provider < User
-  has_many :redeemables, dependent: :destroy
+class Provider < ApplicationRecord
+  has_many :projects, dependent: :destroy
 
   def redemptions
-    redeemables_ids = redeemables.map(&:id)
-    Redemption.where(redeemable_id: redeemables_ids)
+    projects_ids = projects.map(&:id)
+    Redemption.where(project_id: projects_ids)
   end
 end

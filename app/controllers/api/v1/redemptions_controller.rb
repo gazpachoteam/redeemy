@@ -1,8 +1,8 @@
 class Api::V1::RedemptionsController < ApplicationController
+  before_action :set_provider
 
   def index
-    @redemptions = Redemption.all
-    render json: @redemptions
+    @redemptions = @provider.redemptions
   end
 
   def show
@@ -37,7 +37,13 @@ class Api::V1::RedemptionsController < ApplicationController
     end
   end
 
+  private
+
+  def set_provider
+    @provider = Provider.find(params[:provider_id])
+  end
+
   def redemption_params
-    params.permit(:customer_id, :redeemable_id, :points)
+    params.permit(:customer_id, :project_id, :points)
   end
 end

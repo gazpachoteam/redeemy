@@ -1,0 +1,51 @@
+class Api::V1::ProjectsController < ApplicationController
+
+  def index
+    @projects = Project.all
+    render json: @projects
+  end
+
+  def show
+    @project = Project.find(params[:id])
+    render json: @project
+  end
+
+  def create
+    @provider = Provider.find_by_id(params[:provider_id])
+    unless @provider
+      @provider = Provider.create(id: params[:provider_id], name: params[:provider_name])
+    end
+
+    @project = @project.projects.build(project_params)
+      if @project.save
+        render json: {message: 'Project Saved'}, status: 200
+      else
+        render json: {errors: @project.errors.full_messages}, status: 400
+      end
+  end
+
+  def update
+    @project = Project.find(params[:id])
+    if @project.update(project_params)
+      render json: @project, status: 200
+    else
+      render json: { errors: @project.errors.full_messages}, status: 400
+    end
+  end
+
+  def destroy
+    @project = Project.find(params[:id])
+    if @project.destroy
+      render json: {message: 'Project Deleted'}, status: 200
+    else
+      render json: { errors: @project.errors.full_messages}, status: 400
+    end
+  end
+
+  private
+
+  def project_params
+    params.permit(:name, :description, :category, :expiration)
+  end
+
+end

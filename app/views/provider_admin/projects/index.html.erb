@@ -21,10 +21,10 @@
             </tr>
           </tfoot>
           <tbody>
-            <% @redeemables.each do |redeemable| %>
+            <% @projects.each do |project| %>
               <tr>
-                <td><%= redeemable.name %></td>
-                <td><%= redeemable.description %></td>
+                <td><%= project.name %></td>
+                <td><%= project.description %></td>
               </tr>
             <% end %>
           </tbody>
