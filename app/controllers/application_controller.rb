@@ -1,3 +1,25 @@
 class ApplicationController < ActionController::Base
+  include Response
   protect_from_forgery with: :null_session, if: Proc.new {|c| c.request.format.json? }
+
+  def throw_500(message)
+    render json: {
+      message: message,
+    }, status: 500
+  end
+
+  def api_return(message, status)
+    render json: {
+      message: message,
+    }, status: status
+  end
+
+  def authenticate_user_from_token!
+    @auth_token = request.headers['AUTH_TOKEN'] || request.headers['HTTP_AUTH_TOKEN']
+    if @auth_token
+      @user = User.find_by_authentication_token(@auth_token)
+      sign_in @user, store: false
+    end
+    authenticate_user!
+  end
 end

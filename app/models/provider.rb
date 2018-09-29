@@ -1,4 +1,4 @@
-class Provider < ApplicationRecord
+class Provider < User
   has_many :redeemables, dependent: :destroy
 
   def redemptions

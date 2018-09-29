@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_16_133132) do
+ActiveRecord::Schema.define(version: 2018_09_29_172421) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "customer_id"
@@ -55,13 +55,7 @@ ActiveRecord::Schema.define(version: 2018_09_16_133132) do
     t.datetime "updated_at"
   end
 
-  create_table "providers", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "redeemables", force: :cascade do |t|
+  create_table "projects", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.string "category"
@@ -71,12 +65,34 @@ ActiveRecord::Schema.define(version: 2018_09_16_133132) do
     t.date "expiration"
   end
 
+  create_table "providers", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "redemptions", force: :cascade do |t|
     t.integer "customer_id"
-    t.integer "redeemable_id"
+    t.integer "project_id"
     t.integer "points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "type"
+    t.string "phone"
+    t.string "authentication_token", limit: 30
+    t.string "code"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

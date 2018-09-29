@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :customers
+  devise_for :users
+
   root to: "pages#home"
   get "catalog", to: "pages#catalog"
 
   namespace :api, defaults: { format: "json" } do
     namespace :v1 do
+      post "/request_token" => "tokens#request_token"
+      post "/authenticate_token" => "tokens#authenticate_token"
+
       resources :redeemables
       resources :providers
       resources :redemptions
