@@ -1,8 +1,8 @@
-class ProviderAdmin::RedeemablesController < ProviderAdminController
+class ProviderAdmin::ProjectsController < ProviderAdminController
   before_action :set_provider
 
   def index
-    @redeemables = @provider.redeemables
+    @projects = @provider.projects
   end
 
   private

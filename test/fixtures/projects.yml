@@ -5,7 +5,7 @@
 # below each fixture, per the syntax in the comments below
 #
 
-redeemable_one:
+project_one:
   id: 1
   name: 'Love Ballena'
   description: 'salvando ballenas'
@@ -13,14 +13,14 @@ redeemable_one:
   provider_id: 1
   expiration: 20-01-2019
 
-redeemable_two:
+project_two:
   id: 2
   name: 'Masaje espalda'
   description: 'Masaje unico con Spa Maria Luisa'
   category: 'experiencia'
   expiration: 22-11-2018
 
-redeemable_three:
+project_three:
   id: 3
   name: 'Seguro de salud Allianz'
   description: 'Seguro de salud más de viaje'
@@ -28,7 +28,7 @@ redeemable_three:
   provider_id: 3
   expiration: 22-12-2018
 
-redeemable_four:
+project_four:
   id: 4
   name: 'Seguro de vida Allianz'
   description: 'Seguro de vida más salud'
@@ -36,7 +36,7 @@ redeemable_four:
   provider_id: 3
   expiration: 28-11-2018
 
-redeemable_five:
+project_five:
   id: 5
   name: 'Curso de Rails'
   description: 'curso de tres meses para principiantes'
@@ -44,7 +44,7 @@ redeemable_five:
   provider_id: 4
   expiration: 28-12-2018
 
-redeemable_six:
+project_six:
   id: 6
   name: 'Curso de Vue.js'
   description: 'curso de seis meses para principiantes'

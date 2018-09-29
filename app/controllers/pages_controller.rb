@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def catalog
-    @redeemables = Redeemable.all
+    @projects = Project.all
   end
 end

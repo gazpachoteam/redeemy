@@ -6,20 +6,20 @@
 #
 alejandra_one:
   customer_id: 1
-  redeemable_id: 2
+  project_id: 2
   points: 46
 
 alejandra_two:
   customer_id: 1
-  redeemable_id: 1
+  project_id: 1
   points: 24
 
 alejandra_3:
   customer_id: 3
-  redeemable_id: 4
+  project_id: 4
   points: 24
 
 alejandra_4:
   customer_id: 4
-  redeemable_id: 4
+  project_id: 4
   points: 24

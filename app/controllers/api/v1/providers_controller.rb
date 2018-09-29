@@ -7,7 +7,8 @@ class Api::V1::ProvidersController < ApplicationController
 
   def show
     @provider = Provider.find(params[:id])
-    render json: @provider
+    @provider_projects = @provider.projects.count
+    @provider_redemptions = @provider.redemptions.count
   end
 
   def create

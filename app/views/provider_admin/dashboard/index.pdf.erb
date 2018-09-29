@@ -3,7 +3,7 @@
     <!-- Icon Cards-->
   <div class="row">
     <div class="card-body">
-      <div class="label label-default"><%= @provider.redeemables.count %> productos</div>
+      <div class="label label-default"><%= @provider.projects.count %> productos</div>
       <div class="label label-default"><%= @provider.redemptions.count %> órdenes</div>
     </div>
   </div>
@@ -34,7 +34,7 @@
             <% @provider.redemptions.each do |redemption| %>
               <tr>
                 <td><%= redemption.customer.name %></td>
-                <td><%= redemption.redeemable.name %></td>
+                <td><%= redemption.project.name %></td>
                 <td><%= redemption.points %></td>
               </tr>
             <% end %>
@@ -68,10 +68,10 @@
               </tr>
             </tfoot>
             <tbody>
-              <% @provider.redeemables.each do |redeemable| %>
+              <% @provider.projects.each do |project| %>
                 <tr>
-                  <td><%= redeemable.name %></td>
-                  <td><%= redeemable.description %></td>
+                  <td><%= project.name %></td>
+                  <td><%= project.description %></td>
                 </tr>
               <% end %>
             </tbody>

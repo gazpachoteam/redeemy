@@ -6,9 +6,10 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: "json" } do
     namespace :v1 do
-      resources :redeemables
-      resources :providers
-      resources :redemptions
+      resources :providers do
+        resources :redemptions
+        resources :projects
+      end
       resources :point_types, only: %i[index]
       resources :customers, only: %i[index show]
 
@@ -16,17 +17,5 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'dashboard', to: "dashboard/dashboard#index", as: "bank_dashboard"
-  namespace :dashboard do
-    resources :providers do
-    end
-  end
 
-  get 'provider_admin/:provider_id', to: "provider_admin/dashboard#index", as: "dashboard_for_provider"
-  namespace :provider_admin do
-    resources :providers do
-      resources :redemptions, only: [:index]
-      resources :redeemables, only: [:index]
-    end
-  end
 end
