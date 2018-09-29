@@ -1,5 +1,4 @@
 class Api::V1::ProjectsController < ApplicationController
-
   def index
     @projects = Project.all
     render json: @projects
@@ -9,7 +8,6 @@ class Api::V1::ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     render json: @project
   end
-
   def create
     @provider = Provider.find_by_id(params[:provider_id])
     unless @provider
@@ -47,5 +45,4 @@ class Api::V1::ProjectsController < ApplicationController
   def project_params
     params.permit(:name, :description, :category, :expiration)
   end
-
 end
