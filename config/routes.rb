@@ -8,6 +8,11 @@ Rails.application.routes.draw do
     namespace :v1 do
       post "/request_token" => "tokens#request_token"
       post "/authenticate_token" => "tokens#authenticate_token"
+      resource :tokens,:only => [:destroy]
+
+      resources :users, module: "users" do
+         resources :type, only: %i[index]
+      end
 
       resources :providers, module: "providers" do
         resources :redemptions

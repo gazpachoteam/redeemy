@@ -32,6 +32,10 @@ class User < ApplicationRecord
     false
   end
 
+  def reset_authentication_token!
+    self.authentication_token = generate_authentication_token
+  end
+
   private
 
   def self.find_by_phone_sloppy(phone)

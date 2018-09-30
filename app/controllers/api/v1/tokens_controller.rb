@@ -49,4 +49,11 @@ class Api::V1::TokensController < ApplicationController
     end
   end
 
+  def destroy
+    @user = User.find_by_authentication_token(params[:auth_token])
+    @user.reset_authentication_token!
+    @user.save
+    render :status=>200, :json=>{}
+  end
+
 end
