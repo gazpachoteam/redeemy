@@ -1,0 +1,27 @@
+coordinador_ensenas:
+  id: 2
+  email: "ensenas_admin@fake.me"
+  type: OrgAdmin
+  organization_id: 1
+  authentication_token: s9iZjxxmxgh4UZUKFsZH
+
+coordinador_cafeteros:
+  id: 3
+  email: "cafeteros_admin@fake.me"
+  type: OrgAdmin
+  organization_id: 2
+  authentication_token: pKXb3yLDghP17JuZ5zrs
+
+coordinador_poder_joven:
+  id: 4
+  email: "poder_joven_admin@fake.me"
+  type: OrgAdmin
+  organization_id: 3
+  authentication_token: sDwtYK8p2Bvhk-XvzYkz
+
+coordinador_fundacion_orbis:
+  id: 5
+  email: "orbis_admin@fake.me"
+  type: OrgAdmin
+  organization_id: 4
+  authentication_token: Yd3gj2Jss3KG7aUXeyRr

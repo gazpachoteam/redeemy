@@ -9,12 +9,12 @@ class Api::V1::ProjectsController < ApplicationController
     render json: @project
   end
   def create
-    @provider = Provider.find_by_id(params[:provider_id])
-    unless @provider
-      @provider = Provider.create(id: params[:provider_id], name: params[:provider_name])
+    @organization = Organization.find_by_id(params[:organization_id])
+    unless @organization
+      @organization = Organization.create(id: params[:organization_id], name: params[:organization_name])
     end
 
-    @project = @project.projects.build(project_params)
+    @project = @organization.projects.build(project_params)
       if @project.save
         render json: {message: 'Project Saved'}, status: 200
       else

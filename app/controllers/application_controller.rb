@@ -24,7 +24,9 @@ class ApplicationController < ActionController::Base
     @auth_token = request.headers['AUTH_TOKEN'] || request.headers['HTTP_AUTH_TOKEN'] || params[:auth_token]
     if @auth_token
       @user = User.find_by_authentication_token(@auth_token)
-      sign_in @user, store: false
+      if @user
+        sign_in @user, store: false
+      end
     end
     authenticate_user!
   end

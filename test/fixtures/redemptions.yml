@@ -5,21 +5,21 @@
 # below each fixture, per the syntax in the comments below
 #
 alejandra_one:
-  customer_id: 1
+  customer_id: 6
   project_id: 2
   points: 46
 
 alejandra_two:
-  customer_id: 1
+  customer_id: 6
   project_id: 1
   points: 24
 
 alejandra_3:
-  customer_id: 3
+  customer_id: 6
   project_id: 4
   points: 24
 
 alejandra_4:
-  customer_id: 4
+  customer_id: 6
   project_id: 4
   points: 24
