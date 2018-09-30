@@ -12,4 +12,8 @@ class Customer < User
   def nro_of_points
     accounts.map(&:nro_of_points).inject(:+)
   end
+
+  def nro_of_redeemed_points
+    redemptions.map(&:points).inject(:+)
+  end
 end
