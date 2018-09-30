@@ -1,8 +1,8 @@
-class Api::V1::RedemptionsController < ApplicationController
-  before_action :set_provider
+class Api::V1::Organizations::RedemptionsController < ApplicationController
+  before_action :set_organization
 
   def index
-    @redemptions = @provider.redemptions
+    @redemptions = @organization.redemptions
   end
 
   def show
@@ -39,8 +39,8 @@ class Api::V1::RedemptionsController < ApplicationController
 
   private
 
-  def set_provider
-    @provider = Provider.find(params[:provider_id])
+  def set_organization
+    @organization = Organization.find(params[:organization_id])
   end
 
   def redemption_params

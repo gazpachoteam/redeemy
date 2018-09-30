@@ -1,0 +1,5 @@
+admin:
+  id: 1
+  email: "admin@fake.me"
+  type: Admin
+  authentication_token: p-g6oKy_axh8nZux-ZNq

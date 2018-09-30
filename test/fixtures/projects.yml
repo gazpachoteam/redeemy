@@ -5,49 +5,30 @@
 # below each fixture, per the syntax in the comments below
 #
 
-project_one:
+proyecto_fundacion_ensenas:
   id: 1
-  name: 'Love Ballena'
-  description: 'salvando ballenas'
-  category: 'proyecto'
-  provider_id: 1
-  expiration: 20-01-2019
+  name: "Inclusión de personas con discapacidad auditiva en la Educación Superior"
+  description: "Acompañamiento social, trabajo de voluntarios."
+  category: "Educación de Calidad, Trabajo Decente y Crecimiento Económico"
+  organization_id: 1
 
-project_two:
+proyecto_cafeteros:
   id: 2
-  name: 'Masaje espalda'
-  description: 'Masaje unico con Spa Maria Luisa'
-  category: 'experiencia'
-  expiration: 22-11-2018
+  name: "Convenio de educación Escuela Nueva y Posprimaria"
+  description: "En el marco del convenio 297 celebrado entre la Gobernación de Santander – Secretaría de Educación Departamental y la Federación Nacional de Cafeteros de Colombia - Comité Departamental de Cafeteros de Santander, con el propósito de fortalecer la Escuela Nueva Posprimaria y Escuela y Café, se vienen desarrollando acciones conjuntas que fomentan la cobertura, la calidad y la pertinencia de la educación rural en 28 municipios cafeteros del departamento, con el concurso del Instituciones del sector público y privado y organismos de Cooperación Internacional."
+  category: "Fin de la Pobreza, Hambre cero"
+  organization_id: 2
 
-project_three:
+proyeto_poder_joven:
   id: 3
-  name: 'Seguro de salud Allianz'
-  description: 'Seguro de salud más de viaje'
-  category: 'servicio'
-  provider_id: 3
-  expiration: 22-12-2018
+  name: "Padrinazgo"
+  description: " TOTTO apadrina niños y niñas de diferentes ciudades garantizando su educación, salud, cultura y recreación, pero sobre todo fomentando su derecho a soñar."
+  category: "Educación de Calidad"
+  organization_id: 3
 
-project_four:
+proyecto_orbis:
   id: 4
-  name: 'Seguro de vida Allianz'
-  description: 'Seguro de vida más salud'
-  category: 'servicio'
-  provider_id: 3
-  expiration: 28-11-2018
-
-project_five:
-  id: 5
-  name: 'Curso de Rails'
-  description: 'curso de tres meses para principiantes'
-  category: 'experiencia'
-  provider_id: 4
-  expiration: 28-12-2018
-
-project_six:
-  id: 6
-  name: 'Curso de Vue.js'
-  description: 'curso de seis meses para principiantes'
-  category: 'experiencia'
-  provider_id: 4
-  expiration: 28-01-2019
+  name: "Cundinamarca, una ruta de colores"
+  description: "Crear atractivos turísticos para cautivar visitantes y dinamizar la economía de municipios alejados de Cundinamarca"
+  category: "Fin de la Pobreza, Trabajo Decente y Crecimiento Económico"
+  organization_id: 4

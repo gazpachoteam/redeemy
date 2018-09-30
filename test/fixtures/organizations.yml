@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+fundacion_ensenas:
+  id: 1
+  name: "Fundación Enseñas"
+  created_at: <%= DateTime.now %>
+  updated_at: <%= DateTime.now %>
+
+federacion_cafeteros:
+  id: 2
+  name: "Federación nacional de cafeteros de Colombia"
+  created_at: <%= DateTime.now %>
+  updated_at: <%= DateTime.now %>
+
+fundacion_poder_joven:
+  id: 3
+  name: "Fundacion Poder Jovén"
+  created_at: <%= DateTime.now %>
+  updated_at: <%= DateTime.now %>
+
+fundacion_orbis:
+  id: 4
+  name: "Fundación Orbis"
+  created_at: <%= DateTime.now %>
+  updated_at: <%= DateTime.now %>

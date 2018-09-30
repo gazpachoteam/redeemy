@@ -14,10 +14,15 @@ Rails.application.routes.draw do
          resources :type, only: %i[index]
       end
 
-      resources :providers, module: "providers" do
+      resources :organizations, module: "organizations" do
         resources :redemptions
         resources :projects
       end
+
+      resources :org_admins, module: "org_admins" do
+        resources :organization, only: %i[index]
+      end
+
       resources :projects, only: %i[index show]
       resources :point_types, only: %i[index]
       resources :customers, only: %i[index show]
