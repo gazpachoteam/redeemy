@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2018_09_30_155734) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "accounts", force: :cascade do |t|
     t.integer "customer_id"
     t.string "cod_cuent"

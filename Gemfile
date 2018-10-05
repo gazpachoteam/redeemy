@@ -42,8 +42,6 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 gem 'cancancan', '~> 2.3'
 
 group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -75,7 +73,4 @@ gem 'font-awesome-sass', '~> 5.3.1'
 gem "wicked_pdf"
 gem "wkhtmltopdf-heroku"
 gem "wkhtmltopdf-binary-edge"
-
-group :production do
-  gem 'pg'
-end
+gem 'pg'
