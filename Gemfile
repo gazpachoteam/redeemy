@@ -73,4 +73,4 @@ gem 'font-awesome-sass', '~> 5.3.1'
 gem "wicked_pdf"
 gem "wkhtmltopdf-heroku"
 gem "wkhtmltopdf-binary-edge"
-gem 'pg'
+gem "pg", "~> 0.18"
