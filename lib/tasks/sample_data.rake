@@ -1,6 +1,6 @@
 namespace :db do
   desc 'Reset and populate sample data'
-  task populate_sample_data: [:reset, :drop_constraints, 'fixtures:load', :create_constraints] do
+  task populate_sample_data: [:drop_constraints, 'fixtures:load', :create_constraints] do
     puts 'Fixtures loaded in the database'
   end
 
