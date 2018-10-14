@@ -1,4 +1,4 @@
-class Api::V1::ProjectsController < ApplicationController
+class Api::V1::Projects::ProjectsController < ApplicationController
   def index
     @projects = Project.all
     render json: @projects
