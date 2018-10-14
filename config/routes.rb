@@ -23,7 +23,11 @@ Rails.application.routes.draw do
         resources :organization, only: %i[index]
       end
 
-      resources :projects, only: %i[index show]
+      resources :projects, only: %i[index show], module: "projects" do
+        collection do
+          resources :featured, only: %i[index]
+        end
+      end
       resources :point_types, only: %i[index]
       resources :customers, only: %i[index show]
 
