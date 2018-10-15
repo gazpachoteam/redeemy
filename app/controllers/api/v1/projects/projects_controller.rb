@@ -1,6 +1,10 @@
 class Api::V1::Projects::ProjectsController < ApplicationController
   def index
-    @projects = Project.all
+    if params[:category_id].present?
+      @projects = Project.by_category(params[:category_id])
+    else
+      @projects = Project.all
+    end
     render json: @projects
   end
 

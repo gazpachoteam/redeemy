@@ -1,0 +1,28 @@
+
+discapacidad_educacion:
+  project_id: 1
+  category_id: 4
+
+discapacidad_trabajo_decente:
+  project_id: 1
+  category_id: 8
+
+cafeteros_fin_pobreza:
+  project_id: 2
+  category_id: 1
+
+cafeteros_hambre_cero:
+  project_id: 2
+  category_id: 2
+
+padrinazgo_educacion:
+  project_id: 3
+  category_id: 4
+
+orbis_fin_pobreza:
+  project_id: 4
+  category_id: 1
+
+orbis_trabajo_decente:
+  project_id: 4
+  category_id: 8
