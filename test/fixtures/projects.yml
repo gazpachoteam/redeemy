@@ -9,7 +9,6 @@ proyecto_fundacion_ensenas:
   id: 1
   name: "Inclusión de personas con discapacidad auditiva en la Educación Superior"
   description: "Acompañamiento social, trabajo de voluntarios."
-  category: "Educación de Calidad, Trabajo Decente y Crecimiento Económico"
   organization_id: 1
   featured: true
 
@@ -17,7 +16,6 @@ proyecto_cafeteros:
   id: 2
   name: "Convenio de educación Escuela Nueva y Posprimaria"
   description: "En el marco del convenio 297 celebrado entre la Gobernación de Santander – Secretaría de Educación Departamental y la Federación Nacional de Cafeteros de Colombia - Comité Departamental de Cafeteros de Santander, con el propósito de fortalecer la Escuela Nueva Posprimaria y Escuela y Café, se vienen desarrollando acciones conjuntas que fomentan la cobertura, la calidad y la pertinencia de la educación rural en 28 municipios cafeteros del departamento, con el concurso del Instituciones del sector público y privado y organismos de Cooperación Internacional."
-  category: "Fin de la Pobreza, Hambre cero"
   organization_id: 2
   featured: false
 
@@ -25,7 +23,6 @@ proyeto_poder_joven:
   id: 3
   name: "Padrinazgo"
   description: " TOTTO apadrina niños y niñas de diferentes ciudades garantizando su educación, salud, cultura y recreación, pero sobre todo fomentando su derecho a soñar."
-  category: "Educación de Calidad"
   organization_id: 3
   featured: false
 
@@ -33,6 +30,5 @@ proyecto_orbis:
   id: 4
   name: "Cundinamarca, una ruta de colores"
   description: "Crear atractivos turísticos para cautivar visitantes y dinamizar la economía de municipios alejados de Cundinamarca"
-  category: "Fin de la Pobreza, Trabajo Decente y Crecimiento Económico"
   organization_id: 4
   featured: false

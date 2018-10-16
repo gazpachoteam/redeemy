@@ -1,0 +1,105 @@
+# las categorias usadas son las establecidas por la ONU
+# siendo 17 categorias establecidas dentro de los «objetivos y metas de desarrollo sostenible»
+# https://www.un.org/sustainabledevelopment/es/sustainable-development-goals/
+
+fin_de_la_pobreza:
+  id: 1
+  name: "Fin de la pobreza"
+  description: "Para lograr este Objetivo de acabar con la pobreza, el crecimiento económico debe ser inclusivo, con el fin de crear empleos sostenibles y de promover la igualdad."
+  url_image: "1findelapobreza.jpg"
+
+hambre_cero:
+  id: 2
+  name: "Hambre cero"
+  description: "El sector alimentario y el sector agrícola ofrecen soluciones claves para el desarrollo y son vitales para la eliminación del hambre y la pobreza. Gestionadas de forma adecuada, la agricultura, la silvicultura y la acuicultura pueden suministrar comida nutritiva a todo el planeta, así como generar ingresos decentes, apoyar el desarrollo centrado en las personas del campo y proteger el medio ambiente."
+  url_image: "2hambre_cero.jpg"
+
+salud_y_bienestar:
+  id: 3
+  name: "Salud y bienestar"
+  description: "Para lograr los Objetivos de Desarrollo Sostenible es fundamental garantizar una vida saludable y promover el bienestar universal."
+  url_image: "3saludybienestar.jpg"
+
+educacion_de_calidad:
+  id: 4
+  name: "Educación de calidad"
+  description: "La educación es la base para mejorar nuestra vida y el desarrollo sostenibleLas razones de la falta de una educación de calidad son la escasez de profesores capacitados y las malas condiciones de las escuelas de muchas zonas del mundo y las cuestiones de equidad relacionadas con las oportunidades que tienen niños y niñas de zonas rurales. Para que se brinde educación de calidad a los niños de familias empobrecidas, se necesita invertir en becas educativas, talleres de formación para docentes, construcción de escuelas y una mejora del acceso al agua y electricidad en las escuelas."
+  url_image: "4educaciondecalidad.jpg"
+
+igualdad_de_genero:
+  id: 5
+  name: "Igualdad de género"
+  description: "La igualdad entre los géneros no es solo un derecho humano fundamental, sino la base necesaria para conseguir un mundo pacífico, próspero y sostenible. Estableciendo nuevos marcos legales sobre la igualdad de las mujeres en el lugar de trabajo y la erradicación de las prácticas nocivas sobre las mujeres es crucial para acabar con la discriminación basada en el género que prevalece en muchos países del mundo."
+  url_image: "5igualdaddegenero.jpg"
+
+agua_limpia_y_saneamiento:
+  id: 6
+  name: "Agua limpia y saneamiento"
+  description: "El agua libre de impurezas y accesible para todos es parte esencial del mundo en que queremos vivir. Para mejorar el acceso a agua apta para el consumo y al saneamiento, y la gestión racional de los ecosistemas de agua dulce entre las comunidades locales en varios países en desarrollo."
+  url_image: "6agualimpiaysaneamiento.jpg"
+
+energia_asequible_y_no_contaminante:
+  id: 7
+  name: "Energía asequible y no contaminante"
+  description: "La energía es fundamental para casi todos los grandes desafíos y oportunidades a los que hace frente el mundo actualmente. Ya sea para el empleo, la seguridad, el cambio climático, la producción de alimentos o para aumentar los ingresos. El acceso universal a la energía es esencial."
+  url_image: "7energiaasequibleynocontaminante.jpg"
+
+trabajo_decente_y_crecimiento_economico:
+  id: 8
+  name: "Trabajo decente y crecimiento económico"
+  description: "Para conseguir el desarrollo económico sostenible, las sociedades deberán crear las condiciones necesarias para que las personas accedan a empleos de calidad, estimulando la economía sin dañar el medio ambiente. También tendrá que haber oportunidades laborales para toda la población en edad de trabajar, con condiciones de trabajo decentes. El aumento de los compromisos con el comercio, la banca y la infraestructura agrícola también ayudará a aumentar la productividad y a reducir los niveles de desempleo en las regiones más empobrecidas del mundo."
+  url_image: "8trabajodecenteycrecimientoeconomico.jpg"
+
+industria_innovacion_e_infraestructuras:
+  id: 9
+  name: "Industria, innovación e infraestructuras"
+  description: "Las inversiones en infraestructura son fundamentales para lograr un desarrollo sostenible."
+  url_image: "9industriainnovacioneinfraestructura.jpg"
+
+reduccion_de_las_desigualdades:
+  id: 10
+  name: "Reducción de las desigualdades"
+  description: "Reducir la desigualdad en y entre los países. Con el fin de reducir la desigualdad, se ha recomendado la aplicación de políticas universales que presten también especial atención a las necesidades de las poblaciones desfavorecidas y marginadas. Es necesario que haya un aumento en el trato libre de aranceles y que se continúen favoreciendo las exportaciones de los países en desarrollo, además de aumentar la participación del voto de los países en desarrollo dentro del Fondo Monetario Internacional (FMI). Finalmente, las innovaciones en tecnología pueden ayudar a reducir elevado costo de transferir dinero para los trabajadores migrantes."
+  url_image: "10reducciondelasdesigualdades.jpg"
+
+ciudades_y_comunidades_sostenibles:
+  id: 11
+  name: "Ciudades y comunidades sostenibles"
+  description: "Las inversiones en infraestructura son cruciales para lograr el desarrollo sostenible."
+  url_image: "11ciudadesycomunidadessostenibles.jpg"
+
+produccion_y_consumo_responsables:
+  id: 12
+  name: "Producción y consumo responsables"
+  description: "El objetivo del consumo y la producción sostenibles es hacer más y mejores cosas con menos recursos."
+  url_image: "12produccionyconsumoresponsables.jpg"
+
+accion_por_el_clima:
+  id: 13
+  name: "Acción por el clima"
+  description: "Adoptar medidas urgentes para combatir el cambio climático y sus efectos. El cambio climático afecta a todos los países en todos los continentes, produciendo un impacto negativo en su economía, la vida de las personas y las comunidades."
+  url_image: "13accionporelclima.jpg"
+
+vida_submarina:
+  id: 14
+  name: "Vida submarina"
+  description: "Conservar y utilizar en forma sostenible los océanos, los mares y los recursos marinos para el desarrollo sostenible"
+  url_image: "14vidasubmarina.jpg"
+
+vida_de_ecosistemas_terrestres:
+  id: 15
+  name: "Vida de ecosistemas terrestres"
+  description: "Gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e invertir la degradación de las tierras y detener la pérdida de biodiversidad."
+  url_image: "15vidadeecosistemasterrestres.jpg"
+
+paz_justicia_e_instituciones_solidas:
+  id: 16
+  name: "Paz justicia e instituciones sólidas"
+  description: "Acceso universal a la justicia y la construcción de instituciones responsables y eficaces a todos los niveles."
+  url_image: "16pazjusticiaeinstitucionessolidas.jpg"
+
+alianzas_para_lograr_los_objetivos:
+  id: 17
+  name: "Alianzas para lograr los objetivos"
+  description: "Un programa exitoso de desarrollo sostenible requiere alianzas entre los gobiernos, el sector privado y la sociedad civil. Estas alianzas inclusivas construidas sobre principios y valores, una visión compartida, y metas compartidas, que colocan a la gente y al planeta en el centro, son necesarias a nivel global, regional, nacional y local."
+  url_image: "17alianzasparalograrlosobjetivos.jpg"
