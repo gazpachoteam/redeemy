@@ -13,14 +13,14 @@ Rails.application.routes.draw do
 
       resources :organizations, module: "organizations" do
         resources :redemptions
-        resources :projects
+        resources :projects, only: [:index]
       end
 
       resources :org_admins, module: "org_admins" do
         resources :organization, only: %i[index]
       end
 
-      resources :projects, only: %i[index show], module: "projects" do
+      resources :projects, only: %i[index show update create], module: "projects" do
         collection do
           resources :featured, only: %i[index]
         end
