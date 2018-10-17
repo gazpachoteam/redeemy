@@ -25,7 +25,7 @@ Rails.application.routes.draw do
           resources :featured, only: %i[index]
         end
       end
-      resources :categories, only: %i[index]
+      resources :categories, only: %i[index show]
       resources :point_types, only: %i[index]
       resources :customers, only: %i[index show]
 
