@@ -27,7 +27,9 @@ Rails.application.routes.draw do
       end
       resources :categories, only: %i[index show]
       resources :point_types, only: %i[index]
-      resources :customers, only: %i[index show]
+      resources :customers, only: %i[index show], module: "customers" do
+        resources :redemptions, only: %i[index]
+      end
 
       post "/answers" => 'answers#get'
     end

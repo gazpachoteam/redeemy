@@ -5,7 +5,6 @@ class Api::V1::Projects::ProjectsController < ApplicationController
     else
       @projects = Project.all
     end
-    render json: @projects
   end
 
   def show

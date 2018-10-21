@@ -1,4 +1,4 @@
-class Api::V1::CustomersController < ApplicationController
+class Api::V1::Customers::CustomersController < ApplicationController
   before_action :authenticate_user_from_token!
   before_action :set_customer, only: %i[show]
 
