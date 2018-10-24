@@ -9,3 +9,9 @@ json.categories do
     json.partial! 'api/v1/categories/category.json.jbuilder', category: category
   end
 end
+
+json.pictures do
+  json.array! project.pictures do |picture|
+    json.partial! 'api/v1/pictures/picture.json.jbuilder', picture: picture
+  end
+end

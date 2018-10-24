@@ -1,5 +1,6 @@
 class Project < ApplicationRecord
   belongs_to :organization
+  has_many :pictures
   has_many :categories_projects
   has_many :categories, through: :categories_projects
 
